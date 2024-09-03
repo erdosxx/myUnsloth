@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "<Project Name>"
+version = "0.1.0"
+description = "<Project Description>"
+authors = ["Norel <norel.evoagile@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+# [virtualenv]
+# in-project = true
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.1.0"
+matplotlib = "^3.9.2"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.26.0"
+ipykernel = "^6.29.5"
+jupyter = "^1.0.0"
+black = "^24.4.2"
+pylint = "^3.2.5"
+# PyQt5 = "^5.15.10"
+pytest = "^8.2.2"
+pynvim = "^0.5.0"
+jupyter-core = "^5.7.2"
+qtconsole = "^5.5.2"
+pyright = "^1.1.377"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
