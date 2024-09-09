@@ -10,12 +10,12 @@ set shell := ["zsh", "-c"]
 ############################################################################
 
 dev:
-  nix develop ".#poetry" 
+  nix develop ".#poetry" -c zsh
 
 qt:
   herbstclient chain , split right 0.618 , focus right
-  jupyter qtconsole --kernel=myUnsloth &
-  # jupyter qtconsole --kernel=python &
+  # jupyter qtconsole --kernel=myUnsloth &
+  jupyter qtconsole --kernel=python &
 
 up:
   nix flake update
