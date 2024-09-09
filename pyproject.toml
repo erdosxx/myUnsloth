@@ -14,6 +14,23 @@ package-mode = false
 python = "^3.12"
 numpy = "^2.1.0"
 matplotlib = "^3.9.2"
+torch = "^2.3.0"
+# To support --no-deps in poetry as following pip command
+# pip install --no-deps trl peft accelerate bitsandbytes
+# poetry add --dry-run trl peft accelerate bitsandbytes
+# edit pyproject.toml with the following,
+trl = "*"
+peft = "*"
+accelerate = "*"
+bitsandbytes = "*"
+# And poetry lock --no-update
+# If you install above packages,
+# poetry install
+triton = "^3.0.0"
+# To install as following unsloth
+# poetry add "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+unsloth = {git = "https://github.com/unslothai/unsloth.git", extras = ["colab-new"]}
+xformers = "0.0.27.post2"
 
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.26.0"

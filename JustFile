@@ -13,7 +13,9 @@ dev:
   nix develop ".#poetry" 
 
 qt:
-  jupyter qtconsole --kernel=python3 &
+  herbstclient chain , split right 0.618 , focus right
+  jupyter qtconsole --kernel=myUnsloth &
+  # jupyter qtconsole --kernel=python &
 
 up:
   nix flake update
